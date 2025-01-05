@@ -4,7 +4,6 @@ from imageio.v2 import imread
 from matplotlib import pyplot as plt
 from scipy import linalg as la
 
-
 class FacialRec:
     """A class for managing a facial recognition database using the Eigenfaces method.
 
@@ -100,7 +99,6 @@ class FacialRec:
         plt.title("Closest Match")
         self.show(match, m, n, display=False)
         plt.show()
-
 
 def sample_faces(k, path="./faces94"):
     """Generate k sample images from the given path.
