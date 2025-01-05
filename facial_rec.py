@@ -81,7 +81,7 @@ class FacialRec:
         ghat = self.project(g - self.mean_face, s)
         return np.argmin(la.norm(fhat.T - ghat.T, axis=1))
 
-    def match(self, image, s=38, m=200, n=180):
+    def display_match(self, image, s=38, m=200, n=180):
         """Display an image alongside its closest match from the dataset.
 
         Args:
